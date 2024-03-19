@@ -4,7 +4,7 @@ Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
 ## Alunos integrantes da equipe
 
-* Iago Snatana
+* Iago Santana
 * Matheus Felipe
 * Maria Clara Gomes 
 * Tiago Boaventura Amaral
