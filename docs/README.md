@@ -30,11 +30,22 @@ O surgimento do nosso aplicativo é uma resposta à preocupante falta de control
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+**Objetivos Gerais:**
 
-**Links Úteis**:
+O Budget Buddy tem como objetivo principal auxiliar os usuários a gerenciarem suas finanças de forma eficiente e organizada, proporcionando uma visão clara de suas receitas, despesas e investimentos. Os objetivos gerais do aplicativo são:
 
-- [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+1. **Facilitar o Gerenciamento Financeiro:** Simplificar o processo de registro e acompanhamento das transações financeiras, proporcionando uma experiência intuitiva para os usuários controlarem seus gastos, receitas e investimentos.
+
+2. **Promover a Consciência Financeira:** Educar os usuários sobre práticas saudáveis de gestão financeira, incentivando o planejamento, a economia e o investimento responsável para alcançarem seus objetivos financeiros de curto e longo prazo.
+
+**Objetivos Específicos:**
+
+1. **Análise de Gastos Detalhada:** Oferecer recursos avançados de análise de gastos, incluindo categorização automática de despesas, gráficos e relatórios personalizáveis ​​para os usuários identificarem padrões de gastos e áreas de otimização.
+
+2. **Gerenciamento de Orçamento Personalizado:** Permitir que os usuários estabeleçam metas financeiras personalizadas e acompanhem seu progresso em relação a orçamentos mensais, semanais ou anuais, recebendo notificações e alertas quando estiverem próximos de ultrapassar limites pré-definidos.
+
+
+
 
 ## Justificativa
 
