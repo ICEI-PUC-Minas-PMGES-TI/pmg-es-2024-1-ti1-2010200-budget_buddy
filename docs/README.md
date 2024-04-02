@@ -20,7 +20,9 @@ Esta seção traz explicações breves sobre o conjunto de artefatos que precisa
 
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+O surgimento do nosso aplicativo é uma resposta à preocupante falta de controle financeiro observada entre jovens e adultos. Reconhecemos que muitas pessoas enfrentam dificuldades em gerenciar suas finanças pessoais, o que pode levar a consequências negativas, como endividamento, estresse financeiro e falta de planejamento para o futuro. Nosso objetivo é fornecer uma solução prática e acessível que ajude os usuários a monitorar seus gastos, criar orçamentos, estabelecer metas financeiras e adquirir hábitos saudáveis de economia. Acreditamos que ao oferecer ferramentas eficazes de gerenciamento financeiro, podemos capacitar as pessoas a assumir o controle de suas finanças e alcançar uma maior estabilidade econômica e bem-estar financeiro.
+
+
 
 Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
