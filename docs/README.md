@@ -62,22 +62,14 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 ![Stakeholders](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/126d41d4-0b41-4063-b6db-369020c255af)
 
 
-**Links Úteis**:
-
-- [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-- [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
 
 ## Personas
 
-Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
 
-**Links Úteis**:
+![Persona](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/12beaacf-d4a4-4d1a-95f7-d54fc8a1aa49)
+![Persona (3)](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/79e90a31-d4d2-44fd-8e2b-a4a6d886adb1)
+![Persona (2)](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/347dbf80-1725-46d5-a4ee-d72d8af7c64d)
 
-- [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-- [O que é persona?](https://resultadosdigitais.com.br/bl![Stakeholders](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/97891b2a-09f6-47b0-9848-ffb17ec7b8de)
-og/persona-o-que-e/)
-- [Rock Content](https://rockcontent.com/blog/personas/)
-- [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
 
 ## Histórias de Usuários
 
