@@ -14,13 +14,9 @@ A documentação do projeto inclui as seguintes seções:
 
 O template para o site é estruturado e permite que a equipe evolua a documentação do projeto à medida que avance no desenvolvimento.
 
-# Orientações gerais
-
-Esta seção traz explicações breves sobre o conjunto de artefatos que precisam ser incluídos na documentação do projeto com uma conjunto de links importantes para que se entenda como criar cada coisa. 
-
 ## Problema
 
-O surgimento do nosso aplicativo é uma resposta à preocupante falta de controle financeiro observada entre jovens e adultos. Reconhecemos que muitas pessoas enfrentam dificuldades em gerenciar suas finanças pessoais, o que pode levar a consequências negativas, como endividamento, estresse financeiro e falta de planejamento para o futuro. Nosso objetivo é fornecer uma solução prática e acessível que ajude os usuários a monitorar seus gastos, criar orçamentos, estabelecer metas financeiras e adquirir hábitos saudáveis de economia. Acreditamos que ao oferecer ferramentas eficazes de gerenciamento financeiro, podemos capacitar as pessoas a assumir o controle de suas finanças e alcançar uma maior estabilidade econômica e bem-estar financeiro.
+O surgimento do nosso aplicativo será uma resposta à preocupante falta de controle financeiro observada entre jovens e adultos. Reconhecemos que muitas pessoas enfrentam dificuldades em gerenciar suas finanças pessoais, o que pode levar a consequências negativas, como endividamento, estresse financeiro e falta de planejamento para o futuro. Nosso objetivo é fornecer uma solução prática e acessível que ajude os usuários a monitorar seus gastos, criar orçamentos, estabelecer metas financeiras e adquirir hábitos saudáveis de economia. Acreditamos que ao oferecer ferramentas eficazes de gerenciamento financeiro, podemos capacitar as pessoas a assumir o controle de suas finanças e alcançar uma maior estabilidade econômica e bem-estar financeiro.
 
 
 
@@ -32,7 +28,7 @@ O surgimento do nosso aplicativo é uma resposta à preocupante falta de control
 
 **Objetivos Gerais:**
 
-O Budget Buddy tem como objetivo principal auxiliar os usuários a gerenciarem suas finanças de forma eficiente e organizada, proporcionando uma visão clara de suas receitas, despesas e investimentos. Os objetivos gerais do aplicativo são:
+O BudgetBuddy terá como objetivo principal auxiliar os usuários a gerenciarem suas finanças de forma eficiente e organizada, proporcionando uma visão clara de suas receitas, despesas e investimentos. Os objetivos gerais do aplicativo são:
 
 1. **Facilitar o Gerenciamento Financeiro:** Simplificar o processo de registro e acompanhamento das transações financeiras, proporcionando uma experiência intuitiva para os usuários controlarem seus gastos, receitas e investimentos.
 
@@ -42,29 +38,35 @@ O Budget Buddy tem como objetivo principal auxiliar os usuários a gerenciarem s
 
 1. **Análise de Gastos Detalhada:** Oferecer recursos avançados de análise de gastos, incluindo categorização automática de despesas, gráficos e relatórios personalizáveis ​​para os usuários identificarem padrões de gastos e áreas de otimização.
 
-2. **Gerenciamento de Orçamento Personalizado:** Permitir que os usuários estabeleçam metas financeiras personalizadas e acompanhem seu progresso em relação a orçamentos mensais, semanais ou anuais, recebendo notificações e alertas quando estiverem próximos de ultrapassar limites pré-definidos.
-
+2. **Gerenciamento de Orçamento Personalizado:** Permitir que os usuários estabeleçam metas financeiras personalizadas e acompanhem seu progresso em relação a orçamentos mensais, semanais ou anuais, recebendo notificações e alerta quando estiverem próximos de ultrapassar limites pré-definidos.
 
 
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A escolha de construir o BudgetBuddy é motivada por diversas razões, todas fundamentais para a gestão eficaz das finanças pessoais ou empresariais. Abaixo estão algumas razões-chave para essa escolha:
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+1. **Organização Financeira:** O BudgetBuddy irá oferecer uma estrutura organizacional para acompanhar despesas, receitas e outras transações financeiras. Isso é essencial para entender onde o dinheiro está sendo gasto, identificar áreas de economia e garantir que as finanças estejam em ordem.
 
-**Links Úteis**:
+2. **Planejamento Financeiro:** Com o BudgetBuddy, será possível estabelecer metas financeiras de curto, médio e longo prazo. Isso inclui economizar para aposentadoria, comprar uma casa, pagar dívidas ou investir em educação. Ao definir metas claras, torna-se mais fácil criar um plano financeiro viável para alcançá-las.
 
-- [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+3. **Monitoramento de Desempenho:** Utilizando o BudgetBuddy, o usuário conseguirá acompanhar o desempenho financeiro ao longo do tempo. Isso envolve analisar tendências de gastos, comparar orçamentos planejados com gastos reais e avaliar as despesas em relação ao salário. Essa análise contínua ajuda a tomar decisões financeiras informadas.
+
 
 ## Público-Alvo
+
+Nosso público-alvo abrange uma ampla faixa etária e inclui pessoas que enfrentam dificuldades no controle de seus ganhos e gastos. Desde adolescentes que estão aprendendo a gerenciar sua mesada ou salário de primeiro emprego até idosos que buscam uma maior organização em sua aposentadoria, nosso objetivo é oferecer uma solução acessível e eficaz para todas as idades.
+
+Entendemos que as dificuldades financeiras não têm idade e podem afetar qualquer pessoa em diferentes estágios da vida. Adolescentes podem enfrentar desafios ao aprender a lidar com o dinheiro pela primeira vez, enquanto adultos podem lutar para equilibrar despesas e receitas. Idosos, por sua vez, podem enfrentar questões específicas relacionadas à aposentadoria e à gestão de suas economias para garantir um futuro financeiro estável.
+
+Nosso site será desenvolvido com a compreensão dessas diversas necessidades e é projetado para ser intuitivo e fácil de usar, independentemente da idade do usuário. Ele oferece recursos que ajudam a monitorar ganhos e gastos, estabelecer orçamentos, definir metas financeiras e fornecer insights valiosos sobre os hábitos de gastos.
+
 
 ![Stakeholders](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/126d41d4-0b41-4063-b6db-369020c255af)
 
 
 
 ## Personas
-
 
 ![Persona](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/12beaacf-d4a4-4d1a-95f7-d54fc8a1aa49)
 ![Persona (3)](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/79e90a31-d4d2-44fd-8e2b-a4a6d886adb1)
@@ -73,12 +75,15 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 
 ## Histórias de Usuários
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
+Conheça Marcela, uma jovem de 19 anos que vive em uma cidade movimentada. Marcela é uma estudante universitária que depende da mesada de seus pais como sua principal fonte de renda. Apesar de ser grata pelo apoio financeiro de seus pais, Marcela sempre se sentiu um pouco limitada em relação ao seu dinheiro, o que a levou a adotar um estilo de vida mais modesto.
 
-**Links Úteis**:
+Marcela é uma garota que adora explorar a cidade com seus amigos e experimentar novos restaurantes e cafés. Ela também gosta de se vestir bem e não dispensa uma boa oportunidade de atualizar seu guarda-roupa. No entanto, ela reconhece que precisa controlar melhor seus gastos, especialmente considerando que sua mesada não é muito grande.
 
-- [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-- [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+Em uma conversa sobre suas finanças, Marcela admite que não faz um planejamento financeiro mensal. Ela geralmente gasta seu dinheiro de forma impulsiva, sem considerar cuidadosamente suas despesas. No entanto, ela expressa o desejo de economizar o máximo possível de sua mesada, mesmo que seja uma quantia modesta, pois sabe que é importante ter uma reserva financeira.
+
+Para ajudá-la a controlar seus gastos, Marcela elabora uma lista com suas prioridades. Ela decide separar uma parte de sua mesada para despesas essenciais, como alimentação e transporte, e limitar seus gastos com lazer e roupas. No entanto, ela reconhece que essa abordagem tem suas limitações e que gostaria de melhorar suas habilidades de gerenciamento financeiro.
+
+Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinheiro, Marcela responde com honestidade: "Ganhando mais dinheiro". Ela entende que, embora seja importante controlar os gastos, também é crucial aumentar sua renda para alcançar seus objetivos financeiros de longo prazo.
 
 ## Requisitos
 
