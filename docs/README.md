@@ -28,9 +28,9 @@ O surgimento do nosso aplicativo será uma resposta à preocupante falta de cont
 
 **Objetivos Gerais:**
 
-O BudgetBuddy terá como objetivo principal auxiliar os usuários a gerenciarem suas finanças de forma eficiente e organizada, proporcionando uma visão clara de suas receitas, despesas e investimentos. Os objetivos gerais do aplicativo são:
+O BudgetBuddy terá como objetivo principal auxiliar os usuários a gerenciarem suas finanças de forma eficiente e organizada, proporcionando uma visão clara de suas receitas, despesas e metas. Os objetivos gerais do aplicativo são:
 
-1. **Facilitar o Gerenciamento Financeiro:** Simplificar o processo de registro e acompanhamento das transações financeiras, proporcionando uma experiência intuitiva para os usuários controlarem seus gastos, receitas e investimentos.
+1. **Facilitar o Gerenciamento Financeiro:** Simplificar o processo de registro e acompanhamento das transações financeiras, proporcionando uma experiência intuitiva para os usuários controlarem seus gastos, receitas e metas.
 
 2. **Promover a Consciência Financeira:** Educar os usuários sobre práticas saudáveis de gestão financeira, incentivando o planejamento, a economia e o investimento responsável para alcançarem seus objetivos financeiros de curto e longo prazo.
 
