@@ -89,17 +89,17 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 
 **Requisitos funcionais (RF):**
 
-- Login e cadastro de usuário
-- Criar e exibir metas com base no dinheiro reservado
-- Aba para receitas declaradas
-- Resumo do mês
+- Login e cadastro de usuário;
+- Criar e exibir metas com base no dinheiro reservado;
+- Aba para receitas declaradas;
+- Resumo do mês;
 - Cadastro de despesas e etiquetas para gastos fixos e variaveis;
-- Exibir as despesas e calcular a media de gastos no mês
+- Exibir as despesas e calcular a media de gastos no mês.
 
 
 **Requisitos não funcionais (RNF):**
-- Desempenho
-- Segurança (Por se tratar de dados)
+- Desempenho;
+- Segurança (Por se tratar de dados);
 - Acessibilidade e usabilidades.
 
 
