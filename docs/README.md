@@ -132,6 +132,7 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 **Painel principal**
 
 ![Painel principal](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/0fa0da6b-a550-46b2-b892-00934d79c880)
+
 **Declaração de gastos**
 
 ![Declaração de gastos](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/34ad7ef0-43ea-4b41-8ac2-aa226b0a8a73)
