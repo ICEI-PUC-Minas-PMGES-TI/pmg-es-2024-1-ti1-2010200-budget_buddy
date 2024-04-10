@@ -146,7 +146,7 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 
 ## Gestão de Projetos
 
-Relatório de Divisão de Tarefas e Ferramentas Utilizadas
+**Relatório de Divisão de Tarefas e Ferramentas Utilizadas**
 
 Durante o desenvolvimento do projeto, a equipe adotou uma abordagem colaborativa na distribuição de responsabilidades, visando garantir eficiência e cumprimento de todas as etapas necessárias. As tarefas foram divididas entre os membros da equipe da seguinte maneira:
 
