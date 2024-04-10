@@ -110,6 +110,9 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 <img width="3488" alt="Untitled" src="https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/820093ef-fe73-4d04-bd7b-e369ff42c8f8">
 
 
+
+
+
 ## Wireframes
 
 ![Home](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/ff756660-dbd7-4a4c-b847-d7a47a61c55d)
@@ -131,6 +134,13 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 ![Cadastrar nova receita](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/9b404519-02d0-47f3-8d39-0f4d3e1cafcc)
 
 ![Cadastrar nova meta](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/29c2e8fe-ed3e-466e-b41f-156132fd7ef7)
+
+
+
+
+
+
+
 
 
 ## Gestão de Projetos
