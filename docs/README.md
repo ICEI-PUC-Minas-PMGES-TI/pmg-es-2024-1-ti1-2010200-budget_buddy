@@ -107,11 +107,6 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 
 <img width="3488" alt="Untitled" src="https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/820093ef-fe73-4d04-bd7b-e369ff42c8f8">
 
-**Links Úteis**:
-
-- [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-- [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-- [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
 
 ## Wireframes
 
@@ -119,10 +114,16 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 
 ![Home](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/ff756660-dbd7-4a4c-b847-d7a47a61c55d)
 
-**Cadastro/Login/Esqueci a senha**
+**Cadastro**
 
 ![Cadastro](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/90cf6186-1559-4b58-b95d-2ec196a26e95)
+
+**Login**
+
 ![login](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/b675dfbc-2f71-4a2e-b179-5a62e926b417)
+
+**Esqueci a senha**
+
 ![Esqueci a senha](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/f8098bfd-bb48-4964-8ec2-1702e2f90a30)
 
 **Painel usuário**
@@ -137,10 +138,16 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 
 ![Declaração de gastos](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/34ad7ef0-43ea-4b41-8ac2-aa226b0a8a73)
 
-**Cadastrar novos gastos/Receita/Metas**
+**Cadastrar novos gastos**
 
 ![Cadastrar novo gasto](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/23bdedf3-f4bf-4e8b-9c59-09414089ff67)
+
+**Cadastrar nova Receita**
+
 ![Cadastrar nova receita](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/9b404519-02d0-47f3-8d39-0f4d3e1cafcc)
+
+**Cadastrar nova Meta**
+
 ![Cadastrar nova meta](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/29c2e8fe-ed3e-466e-b41f-156132fd7ef7)
 
 
