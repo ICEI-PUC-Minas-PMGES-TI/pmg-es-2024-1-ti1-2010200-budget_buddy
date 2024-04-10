@@ -146,14 +146,29 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 
 ## Gestão de Projetos
 
- Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
+Relatório de Divisão de Tarefas e Ferramentas Utilizadas
 
-Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
+Durante o desenvolvimento do projeto, a equipe adotou uma abordagem colaborativa na distribuição de responsabilidades, visando garantir eficiência e cumprimento de todas as etapas necessárias. As tarefas foram divididas entre os membros da equipe da seguinte maneira:
 
-**Links Úteis**:
+- Matheus Felipe Correa: Encarregou-se da divisão de tarefas, documentação no GitHub e no Canvas, criação da logo e elaboração dos slides de apresentação e design thinking.
 
-- [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-- [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-- [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-- [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-- [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+- Maria Clara: Contribuiu com a criação da logo, mapeamento do público-alvo e stakeholders, além de desenvolver o user flow e os wireframes.
+
+- Iago Santana: Responsável pela criação das personas utilizadas na fase de design thinking, elaboração do mapa de prioridades e do mural de possibilidades.
+
+- Débora Campos: Encarregada da realização das entrevistas e prestou apoio ao grupo na elaboração da logo.
+
+- Rafael Melo: Contribuiu com apoio ao grupo durante o trabalho todo.
+  
+- Tiago Boaventura: Responsável pela elaboração da matriz de alinhamento e colaborou com Iago Santana na criação do mapa de prioridades.
+
+Essa divisão permitiu uma abordagem multidisciplinar e colaborativa, resultando em um projeto bem estruturado e alinhado com os objetivos estabelecidos.
+
+Dentre as ferramentas empregadas, utilizamos um grupo no WhatsApp para facilitar a comunicação e o envio de arquivos. Além disso, empregamos as seguintes ferramentas:
+
+- Illustrator: Utilizado para a criação da logo do projeto.
+- Canva: Utilizado para a parte final do design dos slides.
+- Excel: Utilizado para gerenciar as tarefas.
+- Figma: Utilizado para criar os protótipos e o User Flow.
+
+A gestão da configuração do projeto e o upload de arquivos foram atribuídos a uma única pessoa, Matheus Felipe Correa, que ficou responsável pelo envio dos documentos e auxiliou os demais membros nas tarefas necessárias.
