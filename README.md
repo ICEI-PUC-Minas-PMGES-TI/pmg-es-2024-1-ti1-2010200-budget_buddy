@@ -12,7 +12,7 @@ Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 * Rafael Melo
 ## Professores responsáveis
 
-* Joao Paulo Aramuni
+* João Paulo Aramuni
 * Michelle Hanne Soares
 
 ## Instruções de utilização
