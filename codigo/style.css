@@ -1,0 +1,39 @@
+h2{
+    text-align: left;
+  }
+  #total{
+    text-align: left;
+    align-items: end;
+    border: 40px;
+  
+  
+  }
+  .novo_gasto{
+    border: 40px solid ;
+  }
+  .botao button{
+    color:black;
+    background-color: #71AE1E;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: solid #71AE1E;
+  }
+  .botao button:hover{
+    color:rgb(0, 0, 0);
+    background-color: #3A4E20;
+    border: solid #3A4E20;
+  }
+  #categorySelector{
+    color: white;
+    background-color: #0D3316;
+    border-radius: 15px;
+    height: 35px;
+    width: 300px;
+  }
+  #categorySelector :hover{
+    color: #3A4E20;
+  }
+  h3{
+    border-left-color: ;
+  }
