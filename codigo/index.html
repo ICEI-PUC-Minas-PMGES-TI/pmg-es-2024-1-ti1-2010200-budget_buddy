@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="style.css" rel="stylesheet">
+    <title>Adição de novo Gasto</title>
+</head>
+<body>
+    <header> </header>
+   <main> </main>
+   <div id="total">
+   <form name="novo_gasto">
+    <h2> Adicione um novo gasto</h2>
+    <input type="text" id="nomeid" placeholder="Nome" required="required" name="nome"/>
+<label for="nome">Nome</label>
+<input type="valor" id="valorid" placeholder="R$0,00"  name="valor"/>
+<label for="valor">Valor</label>
+</div>
+<div class="container">
+    <h3>Seletor de Categoria</h3>
+    <select id="categorySelector">
+      <option value="0">Selecione uma categoria...</option>
+      <option value="0">Alimentação</option>
+      <option value="0">Estudos</option>
+      <option value="0">Lazer</option>
+      <option value="0">Moradia</option>
+      <option value="0">Transporte</option>
+      <option value="0">Saúde</option>
+      
+    </select>
+    <div id="categoryDisplay"></div>
+  </div>
+  <div class="botao">
+  <button>Criar</button>
+</div>   
+</form>
+
+   <script src="main.js"></script>
+<footer>
+    
+</footer>
+</body>
+</html>
+
