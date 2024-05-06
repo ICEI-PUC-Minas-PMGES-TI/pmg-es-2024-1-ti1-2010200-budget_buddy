@@ -1,11 +1,8 @@
-h2{
-    text-align: left;
-  }
+
   #total{
-    text-align: left;
+    text-align: center;
     align-items: end;
     border: 40px;
-  
   
   }
   .novo_gasto{
@@ -18,6 +15,9 @@ h2{
     height: 40px;
     border-radius: 15px;
     border: solid #71AE1E;
+    text-align: center;
+    align-items: center;
+    
   }
   .botao button:hover{
     color:rgb(0, 0, 0);
@@ -30,10 +30,51 @@ h2{
     border-radius: 15px;
     height: 35px;
     width: 300px;
+    
   }
   #categorySelector :hover{
     color: #3A4E20;
+  border: #71AE1E solid;
   }
   h3{
-    border-left-color: ;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+
+  }
+  #valorid{
+    background-color: #71AE1E;
+    border: #71AE1E solid 7px;
+    border-radius: 40px;
+    color: white;
+  }
+  #nomeid{
+    background-color: #71AE1E;
+    border: #71AE1E solid 7px;
+    border-radius: 40px;
+
+  }
+  input::placeholder{
+    color: rgb(79, 77, 77);
+    text-align: rightz;
+  }
+  label{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: left;
+    
+  }
+  #dataid{
+    background-color: #71AE1E;
+    border: #71AE1E solid 7px;
+    border-radius: 40px;
+  }
+  .containercat{
+    align-items: center;
+    text-align: center;
+  }
+  #categoryDisplay{
+    text-align: center;
+    align-items: center;
   }
