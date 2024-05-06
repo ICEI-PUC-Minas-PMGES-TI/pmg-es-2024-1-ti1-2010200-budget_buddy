@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "pmg-es-2024-1-ti1-2010200-budget_buddy",
+			"path": "../pmg-es-2024-1-ti1-2010200-budget_buddy"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BudgetBuddy"
+	}
+}
