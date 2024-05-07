@@ -48,17 +48,3 @@ var config = {
 var myChart = new Chart(ctx, config);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-

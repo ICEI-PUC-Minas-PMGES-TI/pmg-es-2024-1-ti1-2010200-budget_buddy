@@ -1,25 +1,46 @@
-
-
-
-.metas{
-    text-align: center;
+/* Estilo para o contêiner de feedbacks */
+#feedback-container {
+  padding: 10px;
 }
 
+/* Estilo para cada feedback */
+.feedback {
+  display: block; /* Cada feedback em bloco */
+  width: 100%; /* Ocupa toda a largura do contêiner */
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box; /* Garante que padding e bordas sejam incluídos na largura */
+}
 
-.Serviços h3 {
+/* Estilo para o nome do usuário nos feedbacks */
+.feedback-nome {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1.1rem; /* Ajusta o tamanho da fonte */
+}
+
+/* Estilo para as estrelas nos feedbacks */
+.feedback-estrelas {
+  color: gold;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+/* Estilo para o comentário nos feedbacks */
+.feedback-comentario {
+  font-style: italic;
+  color: #333;
+  font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+}
+
+/* Estilo para centralizar títulos nas seções metas, serviços e contatos */
+.metas, .Serviços h3, .Contatos h1 {
   text-align: center;
 }
 
-.Contatos h1 {
-  text-align: center;
-}
-
-
-
-
-
-
-
+/* Progress bars - ajuste necessário */
 .progress {
   width: 150px;
   height: 150px;
@@ -38,7 +59,7 @@
   left: 0;
 }
 
-.progress>span {
+.progress span {
   width: 50%;
   height: 100%;
   overflow: hidden;
@@ -49,6 +70,10 @@
 
 .progress .progress-left {
   left: 0;
+}
+
+.progress .progress-right {
+  right: 0;
 }
 
 .progress .progress-bar {
@@ -66,12 +91,7 @@
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
   border-left: 0;
-  -webkit-transform-origin: center left;
   transform-origin: center left;
-}
-
-.progress .progress-right {
-  right: 0;
 }
 
 .progress .progress-right .progress-bar {
@@ -79,7 +99,6 @@
   border-top-left-radius: 80px;
   border-bottom-left-radius: 80px;
   border-right: 0;
-  -webkit-transform-origin: center right;
   transform-origin: center right;
 }
 
@@ -88,42 +107,14 @@
   top: 0;
   left: 0;
 }
-
-/*
-*
-* ==========================================
-* FOR DEMO PURPOSE
-* ==========================================
-*
-*/
-
-
-
-.rounded-lg {
-  border-radius: 1rem;
+/* CSS para a cor verde escuro */
+.nome-verde-escuro {
+  color: #1c771b; /* Verde escuro */
 }
-
-.text-gray {
-  color: #aaa;
-}
-
-div.h4 {
-  line-height: 1rem;
-}
-
-
-
-
-
-
-
-
-
-
-
-  @media (min-width: 992px) {
-    #myChart, #Graf2 {
+/* Responsividade para tamanhos de tela maiores */
+@media (min-width: 992px) {
+  #myChart, #Graf2 {
       width: 900px; /* Ajuste a largura para computadores maiores */
       height: 700px; /* Ajuste a altura para computadores maiores */
-    }
   }
+}
