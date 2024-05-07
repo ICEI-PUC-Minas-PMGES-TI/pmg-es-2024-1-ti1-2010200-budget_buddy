@@ -17,7 +17,12 @@
     border: solid #71AE1E;
     text-align: center;
     align-items: center;
+    margin: auto;
     
+  }
+  
+  .botao{
+    text-align: center;
   }
   .botao button:hover{
     color:rgb(0, 0, 0);
@@ -65,7 +70,7 @@
     align-items: left;
     
   }
-  #dataid{
+  #calendario{
     background-color: #71AE1E;
     border: #71AE1E solid 7px;
     border-radius: 40px;
