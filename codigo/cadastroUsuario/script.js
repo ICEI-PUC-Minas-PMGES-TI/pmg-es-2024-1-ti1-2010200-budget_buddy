@@ -21,12 +21,21 @@ document.addEventListener("DOMContentLoaded", function() {
     if (cadastro) {
         cadastro.addEventListener("submit", function(event) {
             event.preventDefault();
+            
+            var senhaInput = document.getElementById("senha").value;
+            var senhaRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,15}$/;
+            
+            if (!senhaRegex.test(senhaInput)) {
+                alert("A senha deve ter entre 8 e 15 caracteres e conter pelo menos uma letra e um número.");
+                return;
+            }
+
             var cadastroData = {
                 nome: document.getElementById("nome").value,
                 sobrenome: document.getElementById("sobrenome").value,
                 dataNascimento: document.getElementById("dataNascimento").value,
                 email: document.getElementById("email").value,
-                senha: document.getElementById("senha").value,
+                senha: senhaInput,
                 receberNotificacoes: document.getElementById("notificacoes").checked
             };
             localStorage.setItem("cadastroData", JSON.stringify(cadastroData));
@@ -34,6 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
             this.reset();
         });
     }
-});
 
-console.log(localStorage.getItem("cadastroData"));
+    console.log(localStorage.getItem("cadastroData"));
+});
