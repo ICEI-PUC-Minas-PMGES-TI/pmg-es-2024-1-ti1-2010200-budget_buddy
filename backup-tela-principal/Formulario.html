@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Avaliação</title>
+  
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="formulario.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title text-center">Dê um Feedback</h5>
+  
+      <form class="custom-form text-center"> <!-- Adicionando a classe text-center -->
+        <div class="mb-3">
+          <label for="nomeUsuario" class="form-label">Nome do Usuário</label>
+          <input type="text" class="form-control" id="nomeUsuario" name="nomeUsuario" required>
+        </div>
+        
+        <div class="mb-3">
+          <label for="comentario" class="form-label">Comentário:</label>
+          <textarea class="form-control" id="comentario" name="comentario" required></textarea>
+        </div>
+        
+        <div class="mb-3">
+          <label for="estrela5" class="form-label">Avaliação:</label>
+          <div class="rating">
+            <input type="radio" id="estrela5" name="estrelas" value="5" required><label for="estrela5"></label>
+            <input type="radio" id="estrela4" name="estrelas" value="4"><label for="estrela4"></label>
+            <input type="radio" id="estrela3" name="estrelas" value="3"><label for="estrela3"></label>
+            <input type="radio" id="estrela2" name="estrelas" value="2"><label for="estrela2"></label>
+            <input type="radio" id="estrela1" name="estrelas" value="1"><label for="estrela1"></label>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-success">Enviar Feedback</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+   // Função para armazenar feedback no localStorage
+function armazenarFeedback() {
+    // Obter os valores dos campos do formulário
+    var nomeUsuario = document.getElementById('nomeUsuario').value;
+    var comentario = document.getElementById('comentario').value;
+    var estrelas = document.querySelector('input[name="estrelas"]:checked').value;
+
+    // Criar um objeto para armazenar os dados do feedback
+    var feedback = {
+        nomeUsuario: nomeUsuario,
+        comentario: comentario,
+        estrelas: estrelas
+    };
+
+    // Obter o array de feedbacks do localStorage ou iniciar um novo array
+    var feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
+
+    // Adicionar o novo feedback ao array
+    feedbacks.push(feedback);
+
+    // Salvar o array atualizado no localStorage
+    localStorage.setItem('feedbacks', JSON.stringify(feedbacks));
+
+    // Exibir uma mensagem de sucesso
+    alert('Feedback enviado com sucesso!');
+
+    // Limpar o formulário
+    document.querySelector('form').reset();
+}
+
+// Adicionar um ouvinte de evento para o envio do formulário
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar o comportamento padrão de recarregar a página
+    armazenarFeedback(); // Chamar a função para armazenar o feedback
+});
+
+</script>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
