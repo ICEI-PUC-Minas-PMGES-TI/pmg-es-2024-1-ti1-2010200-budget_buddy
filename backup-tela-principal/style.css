@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    max-width: 100vw;
+    text-align: center;
+    background-color: #213726;
+    z-index: 100;
+}
+
+h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 20px;
+}
+
+.dashboard {
+    height: 50vh;
+    background-color: #f0f0f0;
+}
+
+.secao {
+    display: flex;
+    height: 50vh;
+    background-color: #f0f0f0;
+    margin: 20px 0;
+}
+
+.menudeservicos {
+    height: 50vh;
+}
+
+.mensagens {
+    overflow: auto;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.mensagens p {
+    font-size: 30px;
+    font-style: italic;
+    color: #333;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menudeservicos, .mensagens {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .secao {
+        flex-wrap: nowrap;
+    }
+}
+
+
+
+/* botao de feedback */
+
+#feedbackButton {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 20px;
+    background-color: #ffc1075e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#feedbackButton:hover {
+    background-color: #bb9219;
+}

@@ -1,0 +1,122 @@
+.custom-form .mb-3 {
+  border-bottom: 2px solid #006400; /* Cor verde escura */
+  padding-bottom: 10px; /* Espaçamento na parte inferior */
+  margin-bottom: 15px; /* Margem na parte inferior */
+}
+/* Estilo para o container do formulário de feedback */
+#feedback-form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto auto;
+}
+
+/* Estilo para os labels do formulário */
+#feedback-form label {
+  font-weight: bold;
+}
+
+/* Estilo para os inputs de texto, url e textarea do formulário */
+#feedback-form input[type="text"],
+#feedback-form input[type="url"],
+#feedback-form textarea {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* Estilo específico para o textarea do formulário */
+#feedback-form textarea {
+  resize: vertical;
+}
+
+/* Estilo para o container das estrelas */
+#feedback-form .stars-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para os labels das estrelas */
+#feedback-form .stars-container label {
+  margin-right: 5px;
+}
+
+/* Estilo para os inputs de rádio das estrelas */
+#feedback-form .stars-container input[type="radio"] {
+  display: none;
+}
+
+/* Estilo para o ícone das estrelas */
+#feedback-form .stars-container label:before {
+  content: "\2605";
+  font-size: 24px;
+  color: #ccc;
+}
+
+/* Estilo para o ícone das estrelas quando selecionado */
+#feedback-form .stars-container input[type="radio"]:checked ~ label:before {
+  color: #ffcc00;
+}
+
+/* Estilo para o container de feedback */
+.feedback {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+/* Estilo para a foto de perfil */
+.feedback img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+/* Estilo para o conteúdo do feedback */
+.feedback-content {
+  flex: 1;
+}
+
+/* Estilo para o nome do usuário */
+.feedback-content h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Estilo para o comentário */
+.feedback-content p {
+  margin: 5px 0;
+}
+
+/* Estilo para as estrelas */
+.feedback-content .estrelas {
+  color: gold; /* Você pode usar emojis de estrela ou outros símbolos para representar as estrelas */
+}
+
+/* Estilo para o conjunto de estrelas */
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  display: inline-block;
+  padding: 5px;
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+}
+.rating label:before {
+  content: "\2605";
+}
+.rating input:checked ~ label {
+  color: #ffcc00;
+}
+
+body{
+  color: #2f5331;
+}
