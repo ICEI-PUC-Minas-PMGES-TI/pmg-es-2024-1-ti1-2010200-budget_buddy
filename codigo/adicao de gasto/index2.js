@@ -8,6 +8,35 @@ const InputData = document.querySelector("#calendario");
 const tabela = document.querySelector("tbody");
 const categoria = document.querySelector("#categorySelector");
 
+// Função para formatar valor como moeda (Real)
+function formatarValorParaMoeda(valor) {
+  let valorNum = parseFloat(valor.replace(/[\D]+/g, '')) / 100;
+  return valorNum.toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  });
+}
+
+// Event listener para formatar o valor conforme o usuário digita
+InputValor.addEventListener('input', (event) => {
+  let cursorPos = event.target.selectionStart;
+  let valor = event.target.value;
+
+  // Retira todos os caracteres não-numéricos
+  valor = valor.replace(/[\D]+/g, '');
+
+  // Formata o valor como moeda
+  valor = (valor / 100).toLocaleString('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  });
+
+  // Atualiza o campo de valor com o valor formatado
+  event.target.value = valor;
+
+  // Coloca o cursor de volta na posição correta
+  event.target.setSelectionRange(cursorPos, cursorPos);
+});
 
 // Função para criar um novo gasto
 function criar() {
@@ -64,8 +93,7 @@ function criarBotoes() {
   const editarBotao = gerarBotao("Editar");
   const excluirBotao = gerarBotao("Excluir");
 
-  editarBotao.addEventListener("click", () => {
-    // Implemente o que deseja fazer ao clicar em editar
+  editarBotao.addEventListener("click", (event) => {
     const linha = event.target.parentElement.parentElement;
     const caixa = linha.childNodes;
     let id = parseInt(caixa[0].innerText);
@@ -73,8 +101,7 @@ function criarBotoes() {
     sessionStorage.setItem("idnovogasto", id);
   });
 
-  excluirBotao.addEventListener("click", () => {
-    // Implemente o que deseja fazer ao clicar em excluir
+  excluirBotao.addEventListener("click", (event) => {
     const linha = event.target.parentElement.parentElement;
     excluir(linha);
   });
@@ -120,10 +147,8 @@ function buscarGasto(id, novoGasto) {
 window.addEventListener("load", () => {
   gerarTabela();
 });
-//calendário 
+
 // Inicialize o Flatpickr
 flatpickr("#calendario", {
-  // Opções adicionais, se necessário
   dateFormat: "d/m/Y", // Formato da data exibida
-  // Adicione mais opções conforme necessário
 });
