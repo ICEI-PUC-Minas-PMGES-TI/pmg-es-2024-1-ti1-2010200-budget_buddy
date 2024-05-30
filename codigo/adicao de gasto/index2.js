@@ -53,6 +53,7 @@ function criar() {
   localStorage.setItem("Novos_gastos", JSON.stringify(Novos_Gastos));
 
   form.reset();
+  gerarTabela();
 }
 
 // Função para gerar um ID único
@@ -95,10 +96,7 @@ function criarBotoes() {
 
   editarBotao.addEventListener("click", (event) => {
     const linha = event.target.parentElement.parentElement;
-    const caixa = linha.childNodes;
-    let id = parseInt(caixa[0].innerText);
-
-    sessionStorage.setItem("idnovogasto", id);
+    editar(linha);
   });
 
   excluirBotao.addEventListener("click", (event) => {
@@ -117,6 +115,49 @@ function gerarBotao(texto) {
   botao.type = "button";
   botao.textContent = texto;
   return botao;
+}
+
+// Função para editar um gasto
+function editar(linha) {
+  const idOpto = parseInt(linha.id.split("-")[1]);
+
+  let Novos_Gastos = JSON.parse(localStorage.getItem("Novos_gastos")) || [];
+  let indiceGastoEditado = buscarGasto(idOpto, Novos_Gastos);
+
+  if (indiceGastoEditado !== -1) {
+    // Preencher o formulário com os dados do gasto a ser editado
+    const gasto = Novos_Gastos[indiceGastoEditado];
+    nomeInput.value = gasto.nome;
+    InputValor.value = gasto.valor;
+    InputData.value = gasto.data;
+    categoria.value = gasto.categoria;
+
+    // Atualizar o botão de criar para salvar a edição
+    const criarButton = document.querySelector("#criarButton");
+    criarButton.textContent = "Salvar Edição";
+    criarButton.onclick = () => salvarEdicao(indiceGastoEditado);
+  }
+}
+
+// Função para salvar a edição de um gasto
+function salvarEdicao(indice) {
+  Novos_Gastos[indice] = {
+    id: Novos_Gastos[indice].id,
+    nome: nomeInput.value.trim(),
+    valor: InputValor.value.trim(),
+    data: InputData.value.trim(),
+    categoria: categoria.value.trim(),
+  };
+
+  localStorage.setItem("Novos_gastos", JSON.stringify(Novos_Gastos));
+
+  form.reset();
+  gerarTabela();
+
+  // Voltar o botão de salvar para criar novo gasto
+  const criarButton = document.querySelector("#criarButton");
+  criarButton.textContent = "Adicionar";
+  criarButton.onclick = criar;
 }
 
 // Função para excluir um gasto
