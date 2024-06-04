@@ -1,0 +1,55 @@
+body {  /* todo o conteúdo da página */
+  background-color: white;
+  background-image: url('../assets/img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 { /* Mensagem de enviação de email*/
+  text-align: left;
+  margin-left: 20px ;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 2rem; 
+}
+
+h2 { /* cheque a caixa de spam */
+  margin-left: 351px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 0.8rem; 
+  max-width: 400px;
+}
+
+.forgot-password-container a { /* link para redirecionamento de cadastro */
+  color: #006400;
+  text-decoration: none; 
+}
+
+.forgot-password-container {
+  text-align: left;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+p { /* mensagem que aparece para redirecionamento de cadastro */
+  margin-top: 100px;
+  margin-left: 440px;
+  font-size: 0.9rem;
+}
+
+#budgetLogo { /* imagem da minha logo */
+  max-width: 170px; 
+  margin-bottom: 0px;
+  display: block;
+  margin-left: 150px;
+  margin-top: 100px;
+}
