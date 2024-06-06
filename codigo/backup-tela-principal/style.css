@@ -20,6 +20,7 @@ footer {
 h2 {
     margin-left: 10px;
     margin-right: 10px;
+    text-align: center;
 }
 
 .container {
@@ -28,10 +29,13 @@ h2 {
     padding: 20px;
 }
 
-.dashboard {
-    height: 50vh;
-    background-color: #f0f0f0;
+.col-espaco {
+    margin-left: 10px;
 }
+.col-margin {
+    margin-left: 90px;
+}
+
 
 .secao {
     display: flex;

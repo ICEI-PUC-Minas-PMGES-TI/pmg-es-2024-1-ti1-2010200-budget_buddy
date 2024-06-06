@@ -9,6 +9,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="icon" href="/codigo/Home/img/BudgetBuddy (2).ico" type="image/x-icon">
 </head>
 
 <body>
@@ -17,7 +20,7 @@
 
     <nav class="navbar navbar-expand-lg" style="background-color: #213726;">
       <div class="container-fluid">
-          <img src="assets\BudgetBuddy2.png" alt="BudgetBuddy" width="80px">
+        <img src="/codigo/Home/img/BudgetBuddy.png" alt="BudgetBuddy" width="100px">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -27,16 +30,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                      <a class="nav-link active me-5 text-white" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active me-5 text-white" aria-current="page" href="#"></a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link me-5 text-white" href="#">Sobre nós</a>
+                      <a class="nav-link me-5 text-white" href="#"></a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link me-5 text-white" href="#">Sobre o projeto</a>
+                      <a class="nav-link me-5 text-white" href="#"></a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link me-5 text-white" href="#">Contatos</a>
+                      <a class="nav-link me-5 text-white" href="#"></a>
                   </li>
                   <li class="nav-item">
                     <button type="button" class="btn btn-outline-warning">
@@ -44,7 +47,7 @@
                               <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                               <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                           </svg>
-                           Área do usuário
+                           Editar Perfil
                       </button>
                   </li>
               </ul>
@@ -56,71 +59,79 @@
     
 <main>
   <div class="container">
+    <h2>Bem vindo ao seu Dashboard! </h2> 
+    <section class="dashboard">  
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <h5 class="card-title text-center">Gráfico de gastos por categoria</h5>
+                        <canvas id="graficoGastos"></canvas>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <h5 class="card-title text-center">Gráfico 2</h5>
+                        <canvas id="grafico2"></canvas>
+                        <div class="card-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  </section>
-    <!-- secao dos feedbacks -->
-
-</section>
-    <!-- Dashboard -->
-    <section class="dashboard">
-        <h2>Dashboard</h2>
-        <!-- adicionar conteúdo para o dashboard -->
+        <!--second section-->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <h5 class="card-title text-center">Metas</h5>
+                        <div class="card-body">
+                            <!-- Conteúdo das metas -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- Seção 2 -->
-    <section class="secao menudeservicos">
-        <h2>Menu de Serviços</h2>
-        <!-- adicionar o menu de serviços -->
-    </section>
-    <!-- Seção 3 -->
-    <section class="secao mensagens">
-        <h2>Mensagens Motivacionais/Dicas</h2>
-        <div id="motivational-messages">
-      </div>
-  </section>
-</main>
-
-<script>
-  // mensagens motivacionais
-  const motivationalMessages = [
-  "Mantenha-se atualizado sobre questões financeiras e eduque-se continuamente sobre investimentos, planejamento financeiro e estratégias de economia.",
-  "Evite acumular dívidas de cartão de crédito. Pague o saldo total sempre que possível para evitar juros elevados.",
-  "Crie uma reserva de emergência para estar preparado para imprevistos financeiros, como despesas médicas inesperadas ou perda de emprego.",
-  "Considere investir seu dinheiro de forma inteligente para fazer com que ele trabalhe para você e gere retornos no longo prazo.",
-  "Compare preços antes de comprar qualquer coisa. Às vezes, pequenas diferenças podem resultar em grandes economias.",
-  "Evite gastos impulsivos. Pense duas vezes antes de fazer uma compra e pergunte a si mesmo se realmente precisa daquilo.",
-  "Poupe uma parte de sua renda regularmente, mesmo que seja uma pequena quantia. O hábito de economizar é fundamental.",
-  "Estabeleça metas financeiras claras e trabalhe para alcançá-las, seja para economizar para uma emergência ou para uma grande compra.",
-  "Priorize o pagamento de dívidas com juros mais altos para economizar no longo prazo.",
-  "Faça um orçamento mensal e acompanhe seus gastos para entender para onde vai seu dinheiro.",
-  "Nunca é tarde demais para começar a trabalhar na vida que você sempre sonhou. Comece hoje mesmo.",
-  "Seja a mudança que você deseja ver no mundo. - Mahatma Gandhi",
-  "Não importa quantas vezes você caia, o que importa é quantas vezes você se levanta.",
-  "A jornada para o sucesso pode ser árdua, mas cada passo que você dá o aproxima mais de seus objetivos.",
-  "Lembre-se sempre: você é mais forte do que pensa e mais capaz do que imagina.",
-  "A persistência é o segredo do sucesso. Continue seguindo em frente, mesmo quando parecer difícil.",
-  "O sucesso não é final, o fracasso não é fatal: é a coragem de continuar que conta. - Winston Churchill",
-  "Acredite em si mesmo, pois você é capaz de superar qualquer desafio que surgir em seu caminho.",
-  "Cada novo dia é uma oportunidade para recomeçar e alcançar seus sonhos.",
-  "Não deixe que o medo do fracasso o impeça de tentar. Cada obstáculo é uma oportunidade de crescimento.",
-  "Acredite que você pode e já estará no meio do caminho."
-  ];
-
-  // Função para exibir mensagens motivacionais aleatórias
-  function displayMotivationalMessage() {
-    const randomIndex = Math.floor(Math.random() * motivationalMessages.length);
-    const message = motivationalMessages[randomIndex];
-    const messageContainer = document.getElementById("motivational-messages");
-    const paragraph = document.createElement("p");
-    paragraph.textContent = message;
-    messageContainer.appendChild(paragraph);
-  }
-
-  // Exibir uma mensagem motivacional inicial
-  displayMotivationalMessage();
-</script>
-
-
 </div>
+
+
+
+    
+<br>
+
+<!-- Seção 2 -->
+<section class="Menu">
+  <div class="container">
+      <div class="row">
+          <!-- Coluna Serviços -->
+          <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                  <h5 class="card-title text-center">Serviços</h5>
+                  <div id="img1" class="text-center">
+                      <a href="/codigo/adicao de gasto/"><img src="1_no_bg.png" class="img-fluid" style="max-width: 100px;"></a>
+                      <a href="/codigo/cadastro de meta/index.html"><img src="2_no_bg.png" class="img-fluid" style="max-width: 100px;"></a>
+                      <img src="3_no_bg.png" class="img-fluid" style="max-width: 100px;">
+                  </div>
+              </div>
+          </div>
+
+          <!-- Coluna Mensagens Motivacionais/Dicas -->
+          <div class="col-md-6 mb-3">
+              <div class="card h-100">
+                  <div class="card-body">
+                      <h5 class="card-title">Mensagens Motivacionais/Dicas</h5>
+                      <div id="motivational-messages"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
 
 </main>
 
@@ -218,6 +229,13 @@
 <button id="feedbackButton">Feedback</button>
     
     <script src="script.js"></script>
+    <script src="Mensagem.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 </body>
 
