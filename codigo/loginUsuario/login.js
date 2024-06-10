@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (cadastroData.email === username) {
                     if (cadastroData.senha === senha) {
                         alert("Login bem-sucedido!");
+                        window.location.href = "../backup-tela-principal/index.html";
                     } else {
                         alert("Senha incorreta. Por favor, tente novamente.");
                     }
