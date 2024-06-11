@@ -1,0 +1,136 @@
+#total {
+    text-align: center;
+    align-items: center;
+    border: 40px;
+    color: white;
+
+  
+  }
+  
+  .novo_gasto {
+    border: 40px solid;
+  }
+  #novogasto{
+    align-items: end;
+    justify-self: unset;
+    color: white;
+  }
+  
+  .botao button {
+    color: black;
+    background-color: #71AE1E;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: solid #71AE1E;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  
+  }
+  
+  .botao {
+    text-align: center;
+    color: white;
+  }
+  
+  .botao button:hover {
+    color: rgb(0, 0, 0);
+    background-color: #3A4E20;
+    border: solid #3A4E20;
+  }
+  
+  #categorySelector {
+    color: rgb(72, 72, 72);
+    background-color: #71AE1E;
+    border-radius: 15px;
+    height: 35px;
+    width: 205px;
+  
+  }
+  
+  #categorySelector :hover {
+    color: #3A4E20;
+    border: #71AE1E solid;
+  }
+  
+  h3 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+  
+  }
+  
+  #valorid {
+    background-color: #71AE1E;
+    border: #71AE1E solid 7px;
+    border-radius: 40px;
+    color: white;
+  }
+  
+  #nomeid {
+    background-color: #71AE1E;
+    border: #71AE1E solid 7px;
+    border-radius: 40px;
+    color: white;
+  }
+  
+  input::placeholder {
+    color: rgb(79, 77, 77);
+    text-align: rightz;
+  }
+  
+  label {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: left;
+    
+  
+  }
+  
+  #calendario {
+    background-color: #71AE1E;
+    border: #71AE1E solid 7px;
+    border-radius: 40px;
+    color: white;
+  }
+  #calendariofim{
+    background-color: #71AE1E;
+    border: #71AE1E solid 7px;
+    border-radius: 40px;
+    color: white;
+  }
+  
+  .containercat {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .categoryDisplay {
+    text-align: center;
+    align-items: center;
+  }
+  
+  table {
+    border: #71AE1E solid 1px;
+    align-items: center;
+    text-align: center;
+    table-layout: inherit;
+    width: 99%;
+    padding: .100em;
+  
+  }
+  
+  th {
+    border: #71AE1E solid 1px;
+  }
+  
+  tr {
+    border: #71AE1E solid 1px;
+  }
+  
+  main {
+    display: flexbox;
+  
+  }
