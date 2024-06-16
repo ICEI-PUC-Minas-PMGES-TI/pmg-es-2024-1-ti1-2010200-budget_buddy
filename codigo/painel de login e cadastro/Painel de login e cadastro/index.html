@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Buddy</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .logo img {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="box">
+      <div class="inner-box">
+        <div class="forms-wrap">
+          <form id="sign-in-form" autocomplete="off" class="sign-in-form">
+            <div class="logo">
+              <img src="./img/Design sem nome (1).png" alt="easyclass"/>
+              <h4>Budget Buddy</h4>
+            </div>
+
+            <div class="heading">
+              <h2>Bem Vindo Novamente</h2>
+              <h6>Não tem cadastro?</h6>
+              <a href="#" class="toggle">Faça aqui!</a>
+            </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input type="email" name="email" class="input-field" required />
+                <label>Email</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="password" name="senha" class="input-field" required />
+                <label>Senha</label>
+              </div>
+
+              <input type="submit" value="Sign In" class="sign-btn" />
+
+              <p class="text">
+                Esqueceu a senha?
+                <a href="#">Requisite uma aqui!</a>
+              </p>
+            </div>
+          </form>
+
+          <form id="sign-up-form" autocomplete="off" class="sign-up-form">
+            <div class="logo">
+              <img src="./img/Design sem nome (1).png" alt="easyclass" />
+              <h4>Budget Buddy</h4>
+            </div>
+
+            <div class="heading">
+              <h2>Cadastrar</h2>
+              <h6>Já possui uma conta?</h6>
+              <a href="#" class="toggle">Login</a>
+            </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input type="text" name="nome" class="input-field" required />
+                <label>Nome</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="text" name="sobrenome" class="input-field" required />
+                <label>Sobrenome</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="date" name="dob" class="input-field" required />
+                <label>Data de nascimento</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="email" name="email" class="input-field" required />
+                <label>Email</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="password" name="senha" class="input-field" required />
+                <label>Senha</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="checkbox" name="notifications" class="input-field" />
+                <label>Deseja receber notificações acerca da sua renda?</label>
+              </div>
+
+              <input type="submit" value="Cadastrar" class="sign-btn" />
+            </div>
+          </form>
+        </div>
+
+        <div class="carousel">
+          <div class="images-wrapper">
+            <img src="./img/1_transparent.png" class="image img-1 show" alt="" />
+            <img src="./img/2_transparent.png" class="image img-2" alt="" />
+            <img src="./img/3_transparent.png" class="image img-3" alt="" />
+          </div>
+
+          <div class="text-slider">
+            <div class="text-wrap">
+              <div class="text-group">
+                <h2>Controle suas finanças</h2>
+                <h2>Organize seu orçamento</h2>
+                <h2>Organize, economize e prospere com nosso guia financeiro!</h2>
+              </div>
+            </div>
+
+            <div class="bullets">
+              <span class="active" data-value="1"></span>
+              <span data-value="2"></span>
+              <span data-value="3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
