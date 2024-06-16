@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="icon" href="https://github.com/rafaelmelomansur/TIAW/blob/main/BudgetBuddy.png?raw=true"
+    type="image/x-icon">
+  <link href="style.css" rel="stylesheet">
+  <title>Cadastrar Nova Receita</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      background-color: #213726;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .logo {
+      width: 30px;
+      height: 30px;
+    }
+
+    h2 {
+      color: #ffffff;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    input,
+    button {
+      width: 48%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 50px;
+      border: 1px solid #ccc;
+      background-color: #006400;
+      color: white;
+    }
+
+    button {
+      background-color: #90EE90;
+      color: black;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    ::placeholder {
+      color: #cccccc;
+      opacity: 1;
+    }
+
+    #recipeTable {
+      margin-top: 20px;
+      display: none;
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(140, 140, 140);
+      font-family: sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      width: 100%;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      background-color: rgb(228, 240, 245);
+    }
+
+    th,
+    td {
+      border: 1px solid rgb(160, 160, 160);
+      padding: 8px 10px;
+    }
+
+    td:last-of-type {
+      text-align: center;
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237, 238, 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg" style="background-color: #213726;">
+  <div class="container-fluid">
+    <img src="https://github.com/rafaelmelomansur/TIAW/blob/main/BudgetBuddy.png?raw=true" alt="BudgetBuddy"
+      width="60px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+      </svg>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active me-5 text-white" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-5 text-white" href="#Sobreoprojeto">Sobre o projeto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-5 text-white" href="#Servicos">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-5 text-white" href="#Contatos">Contatos</a>
+        </li>
+      </ul>
+    </div>
+    <button type="button" class="btn btn-outline-warning"
+      onclick="window.location.href='/pmg-es-2024-1-ti1-2010200-budget_buddy/codigo/FORMULARIO/Formulario.html';"
+      style="display: flex; align-items: center; padding: 5px; width: 130px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-person-circle"
+        viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+        <path fill-rule="evenodd"
+          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+      </svg>
+      <span style="white-space: normal;">Área do usuário</span>
+    </button>
+</nav>
+
+<div class="container">
+  <div class="header">
+    <h2>Cadastrar Nova Receita</h2>
+  </div>
+  <form id="recipeForm">
+    <input type="text" id="name" placeholder="Nome" required>
+    <input type="number" step="0.01" id="value" placeholder="Valor" required>
+    <input type="text" id="destination" placeholder="Destino" required>
+    <input type="date" id="date" placeholder="Data" required>
+    <button type="submit">Cadastrar Receita</button>
+  </form>
+  <table id="recipeTable" class="table table-striped table-bordered">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Valor</th>
+        <th>Destino</th>
+        <th>Data</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- As receitas serão adicionadas aqui -->
+    </tbody>
+    <tfoot>
+      <!-- Rodapé da tabela aqui -->
+    </tfoot>
+  </table>
+</div>
+
+<!-- JavaScript -->
+<script>
+  function formatDate(dateString) {
+    const dateObj = new Date(dateString);
+    const day = dateObj.getDate().toString().padStart(2, '0');
+    const month = (dateObj.getMonth() + 1).toString().padStart(2, '0');
+    const year = dateObj.getFullYear().toString();
+    return `${day}/${month}/${year}`;
+  }
+
+  const recipeForm = document.getElementById('recipeForm');
+  let recipes = JSON.parse(localStorage.getItem('recipes')) || [];
+  let editIndex = null;
+
+  recipeForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const value = document.getElementById('value').value.trim();
+    const destination = document.getElementById('destination').value.trim();
+    const date = document.getElementById('date').value.trim();
+
+    if (!name || !value || !destination || !date) {
+      alert('Por favor, preencha todos os campos.');
+      return;
+    }
+
+    if (isNaN(value) || parseFloat(value) <= 0) {
+      alert('Por favor, insira um valor válido.');
+      return;
+    }
+
+    if (editIndex !== null) {
+      recipes[editIndex] = { name, value: parseFloat(value).toFixed(2), destination, date };
+      editIndex = null;
+      alert('Receita atualizada com sucesso!');
+    } else {
+      const existingRecipe = recipes.find(recipe => recipe.name === name && recipe.date === date);
+      if (existingRecipe) {
+        alert('Receita já cadastrada.');
+        return;
+      }
+
+      const newRecipe = { name, value: parseFloat(value).toFixed(2), destination, date };
+      recipes.push(newRecipe);
+      alert('Receita cadastrada com sucesso!');
+    }
+
+    localStorage.setItem('recipes', JSON.stringify(recipes));
+    renderRecipes();
+    recipeForm.reset();
+  });
+
+  function renderRecipes() {
+    const tbody = document.querySelector('#recipeTable tbody');
+    tbody.innerHTML = '';
+
+    recipes.forEach((recipe, i) => {
+      const row = document.createElement('tr');
+
+      row.innerHTML = `
+          <td>${recipe.name}</td>
+          <td>${recipe.value}</td>
+          <td>${recipe.destination}</td>
+          <td>${formatDate(recipe.date)}</td>
+          <td>
+            <button class="btn btn-warning" onclick="editRecipe(${i})">Editar</button>
+            <button class="btn btn-danger" onclick="deleteRecipe(${i})">Excluir</button>
+          </td>
+        `;
+
+      tbody.appendChild(row);
+    });
+
+    document.getElementById('recipeTable').style.display = recipes.length ? 'table' : 'none';
+  }
+
+  function editRecipe(index) {
+    const recipe = recipes[index];
+    document.getElementById('name').value = recipe.name;
+    document.getElementById('value').value = recipe.value;
+    document.getElementById('destination').value = recipe.destination;
+    document.getElementById('date').value = recipe.date;
+    editIndex = index;
+  }
+
+  function deleteRecipe(index) {
+    recipes.splice(index, 1);
+    localStorage.setItem('recipes', JSON.stringify(recipes));
+    renderRecipes();
+    alert('Receita excluída');
+  }
+
+  // Renderiza as receitas ao carregar a página
+  renderRecipes();
+</script>
+
+<!-- Footer -->
+<footer class="text-white py-5" style="background-color: #213726;">
+  <section id="Contatos">
+    <div id="Contatos">
+      <h3 style="text-align: center;">Contatos</h3>
+    </div>
+    <div class="container ">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <!-- Autores -->
+        <div class="col mb-3 text-white">
+          <h5>Autores</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://github.com/MatheusFelipeCorrea"
+                class="nav-link p-0 text-body-secondary text-white"><svg xmlns="http://www.w3.org/2000/svg" width="21"
+                  height="21" fill="#FFC107" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg> Matheus Felipe</a></li>
+            <li class="nav-item mb-2"><a href="https://github.com/mariaoliveira27"
+                class="nav-link p-0 text-body-secondary text-white"><svg xmlns="http://www.w3.org/2000/svg" width="21"
+                  height="21" fill="#FFC107" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg> Maria Clara</a></li <li class="nav-item mb-2"><a href="https://github.com/santana-iago"
+              class="nav-link p-0 text-body-secondary text-white"><svg xmlns="http://www.w3.org/2000/svg" width="21"
+                height="21" fill="#FFC107" class="bi bi-github" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+              </svg> Débora Campos</a></li>
+            <li class="nav-item mb-2"><a href="https://github.com/TiagoBoavAmaral"
+                class="nav-link p-0 text-body-secondary text-white"><svg xmlns="http://www.w3.org/2000/svg" width="21"
+                  height="21" fill="#FFC107" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg> Tiago Boaventura</a></li>
+            <li class="nav-item mb-2"><a href="https://github.com/rafaelmelomansur"
+                class="nav-link p-0 text-body-secondary text-white"><svg xmlns="http://www.w3.org/2000/svg" width="21"
+                  height="21" fill="#FFC107" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg> Rafael Melo</a></li>
+          </ul>
+        </div>
+        <!-- Professores Colaboradores -->
+        <div class="col mb-3 text-white">
+          <h5>Professores Colaboradores</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://github.com/joaopauloaramuni"
+                class="nav-link p-0 text-body-secondary text-white"><svg xmlns="http://www.w3.org/2000/svg" width="21"
+                  height="21" fill="#FFC107" class="bi bi-github" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg> João Paulo Aramuni</a></li>
+
+            <li class="nav-item mb-2"><a href="https://github.com/mihanne"
+                class="nav-link p-0 text-body-secondary text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="#FFC107" class="bi bi-github"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg> Michelle Hanne</a></li>
+          </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="container-icons py-3 my-5">
+        <ul class="nav justify-content-center pb-3 mb-3">
+          <li class="mx-4">
+            <a href="https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#FFC107" class="bi bi-github"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col d-flex flex-row align-items-center mb-3">
+        <a href="#" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <img src="https://github.com/rafaelmelomansur/TIAW/blob/main/BudgetBuddy.png?raw=true" width="50px">
+        </a>
+        <p class="text-body-secondary ms-3 text-white">©2024 BudgetBuddy, Inc</p>
+      </div>
+    </div>
+  </section>
+</footer>
+
+</body>
+
+</html>
