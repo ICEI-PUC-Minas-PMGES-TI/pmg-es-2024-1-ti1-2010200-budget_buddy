@@ -85,6 +85,7 @@ document.getElementById('sign-in-form').addEventListener('submit', function(e) {
   let user = getUser(email, senha);
   if (user) {
     alert('Login bem-sucedido');
+    window.location.href = '/codigo/backup-tela-principal/index.html';
   } else {
     alert('Email ou senha incorretos');
   }
