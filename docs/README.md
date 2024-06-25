@@ -131,19 +131,24 @@ Esqueci a senha
 
 ![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/b689067e-87a2-411f-bace-990920cf5c75)
 
---------------
+
 
 ![Painel do usuário](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/89a7d219-9c05-49c2-bd23-8c850a1802d1)
 
-![Painel principal](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/0fa0da6b-a550-46b2-b892-00934d79c880)
+Dashboard
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/1d84d6e5-4744-4bba-9c2e-f3e4f3fe297e)
 
-![Declaração de gastos](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/34ad7ef0-43ea-4b41-8ac2-aa226b0a8a73)
 
-![Cadastrar novo gasto](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/23bdedf3-f4bf-4e8b-9c59-09414089ff67)
 
-![Cadastrar nova receita](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/9b404519-02d0-47f3-8d39-0f4d3e1cafcc)
+Cadastrar novo gasto
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/0a6729c4-4ff9-444c-bd1e-0f8c2299fc65)
 
-![Cadastrar nova meta](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/29c2e8fe-ed3e-466e-b41f-156132fd7ef7)
+Cadastrar nova receita
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/934f8e72-4e65-4e59-bfec-db82aa54f7fb)
+
+Cadastrar nova Meta
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/e1257be6-77b5-4f54-a7b1-4ec572325552)
+
 
 
 
