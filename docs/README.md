@@ -133,21 +133,26 @@ Esqueci a senha
 
 
 Editar perfil
+
 ![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/6cea19d9-6c11-4ada-8615-bff2a7af2acc)
 
 
 Dashboard
+
 ![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/1d84d6e5-4744-4bba-9c2e-f3e4f3fe297e)
 
 
 
 Cadastrar novo gasto
+
 ![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/0a6729c4-4ff9-444c-bd1e-0f8c2299fc65)
 
 Cadastrar nova receita
+
 ![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/934f8e72-4e65-4e59-bfec-db82aa54f7fb)
 
 Cadastrar nova Meta
+
 ![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/e1257be6-77b5-4f54-a7b1-4ec572325552)
 
 
