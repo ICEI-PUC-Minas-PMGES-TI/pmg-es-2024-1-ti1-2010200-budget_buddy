@@ -114,7 +114,9 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 
 
 ## Wireframes
+
 Home
+
 ![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/c5986aad-d922-44aa-b2be-fc416d2b53a9)
 
 Login
