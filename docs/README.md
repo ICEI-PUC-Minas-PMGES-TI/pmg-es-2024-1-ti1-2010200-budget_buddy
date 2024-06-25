@@ -114,14 +114,22 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 
 
 ## Wireframes
+Home
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/c5986aad-d922-44aa-b2be-fc416d2b53a9)
 
-![Home](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/ff756660-dbd7-4a4c-b847-d7a47a61c55d)
+Login
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/9be9428f-5153-4e24-a0c1-a4b3c4c7e204)
 
-![Cadastro](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/90cf6186-1559-4b58-b95d-2ec196a26e95)
+Cadastro
 
-![login](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/b675dfbc-2f71-4a2e-b179-5a62e926b417)
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/fed07f84-cb38-4889-8206-d5a875ddbceb)
 
-![Esqueci a senha](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/f8098bfd-bb48-4964-8ec2-1702e2f90a30)
+
+Esqueci a senha
+
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/b689067e-87a2-411f-bace-990920cf5c75)
+
+--------------
 
 ![Painel do usuário](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/89a7d219-9c05-49c2-bd23-8c850a1802d1)
 
@@ -145,25 +153,17 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 
 ## Gestão de Projetos
 
-**Relatório de Divisão de Tarefas e Ferramentas Utilizadas**
+**Frontend**
+HTML: Estrutura o conteúdo da página.
+CSS: Estiliza o conteúdo para torná-lo visualmente atraente.
+JavaScript: Manipula o DOM (Document Object Model) para criar uma experiência interativa, lida com eventos de usuário, e pode fazer chamadas assíncronas para o backend (AJAX ou fetch).
 
-Durante o desenvolvimento do projeto, a equipe adotou uma abordagem colaborativa na distribuição de responsabilidades, visando garantir eficiência e cumprimento de todas as etapas necessárias. As tarefas foram divididas entre os membros da equipe da seguinte maneira:
+**Backend**
+Node.js: Serve a aplicação, manipula rotas, realiza operações com banco de dados, autenticação e autorização, entre outras funcionalidades de backend.
+Frameworks/Libs: Frameworks como Express.js são comumente usados com Node.js para facilitar o desenvolvimento de servidores web e APIs RESTful.
 
-- Matheus Felipe Correa: Encarregou-se da divisão de tarefas, documentação no GitHub e no Canvas, criação da logo e elaboração dos slides de apresentação e design thinking.
 
-- Maria Clara: Contribuiu com a criação da logo, mapeamento do público-alvo e stakeholders, além de desenvolver o user flow e os wireframes.
-
-- Iago Santana: Responsável pela criação das personas utilizadas na fase de design thinking, elaboração do mapa de prioridades e do mural de possibilidades.
-
-- Débora Campos: Encarregada da realização das entrevistas e prestou apoio ao grupo na elaboração da logo.
-
-- Rafael Melo: Contribuiu com apoio ao grupo durante o trabalho todo.
-  
-- Tiago Boaventura: Responsável pela elaboração da matriz de alinhamento e colaborou com Iago Santana na criação do mapa de prioridades.
-
-Essa divisão permitiu uma abordagem multidisciplinar e colaborativa, resultando em um projeto bem estruturado e alinhado com os objetivos estabelecidos.
-
-Dentre as ferramentas empregadas, utilizamos um grupo no WhatsApp para facilitar a comunicação e o envio de arquivos. Além disso, empregamos as seguintes ferramentas:
+Dentre outras ferramentas empregadas, utilizamos um grupo no WhatsApp para facilitar a comunicação e o envio de arquivos. Além disso, empregamos as seguintes ferramentas:
 
 - Illustrator: Utilizado para a criação da logo do projeto.
 - Canva: Utilizado para a parte final do design dos slides.
