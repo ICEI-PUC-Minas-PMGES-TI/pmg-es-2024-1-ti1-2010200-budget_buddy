@@ -172,4 +172,4 @@ Dentre outras ferramentas empregadas, utilizamos um grupo no WhatsApp para facil
 - Excel: Utilizado para gerenciar as tarefas.
 - Figma: Utilizado para criar os protótipos e o User Flow.
 
-A gestão da configuração do projeto e o upload de arquivos foram atribuídos a uma única pessoa, Matheus Felipe Correa, que ficou responsável pelo envio dos documentos e auxiliou os demais membros nas tarefas necessárias.
+
