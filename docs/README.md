@@ -132,8 +132,9 @@ Esqueci a senha
 ![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/b689067e-87a2-411f-bace-990920cf5c75)
 
 
+Editar perfil
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/6cea19d9-6c11-4ada-8615-bff2a7af2acc)
 
-![Painel do usuário](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/89a7d219-9c05-49c2-bd23-8c850a1802d1)
 
 Dashboard
 ![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/1d84d6e5-4744-4bba-9c2e-f3e4f3fe297e)
