@@ -167,11 +167,13 @@ Cadastrar nova Meta
 ## Gestão de Projetos
 
 **Frontend**
+
 HTML: Estrutura o conteúdo da página.
 CSS: Estiliza o conteúdo para torná-lo visualmente atraente.
 JavaScript: Manipula o DOM (Document Object Model) para criar uma experiência interativa, lida com eventos de usuário, e pode fazer chamadas assíncronas para o backend (AJAX ou fetch).
 
 **Backend**
+
 Node.js: Serve a aplicação, manipula rotas, realiza operações com banco de dados, autenticação e autorização, entre outras funcionalidades de backend.
 Frameworks/Libs: Frameworks como Express.js são comumente usados com Node.js para facilitar o desenvolvimento de servidores web e APIs RESTful.
 
