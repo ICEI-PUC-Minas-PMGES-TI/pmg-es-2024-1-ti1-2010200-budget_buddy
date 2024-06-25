@@ -1,5 +1,4 @@
-let Novos_Gastos = [];
-let novoGasto = {};
+let Novos_meta = [];
 
 const form = document.querySelector("form");
 const nomeInput = document.querySelector("#nomeid");
@@ -41,18 +40,18 @@ InputValor.addEventListener('input', (event) => {
 
 // Função para criar um novo gasto
 function criar() {
-  novoGasto = {
+  let novoGasto = {
     id: criarID(),
     nome: nomeInput.value.trim(),
     valor: InputValor.value.trim(),
     inicio: InputData.value.trim(),
-    final:InputDataFinal.value.trim(),
+    final: InputDataFinal.value.trim(),
     categoria: categoria.value.trim(),
   };
 
-  Novos_Gastos = JSON.parse(localStorage.getItem("Novos_gastos")) || [];
-  Novos_Gastos.push(novoGasto);
-  localStorage.setItem("Novos_gastos", JSON.stringify(Novos_Gastos));
+  Novos_meta = JSON.parse(localStorage.getItem("Novos_meta")) || [];
+  Novos_meta.push(novoGasto);
+  localStorage.setItem("Novos_meta", JSON.stringify(Novos_meta));
 
   form.reset();
   gerarTabela();
@@ -68,13 +67,13 @@ function criarID() {
 
 // Função para gerar a tabela de gastos
 function gerarTabela() {
-  Novos_Gastos = JSON.parse(localStorage.getItem("Novos_gastos")) || [];
+  Novos_meta = JSON.parse(localStorage.getItem("Novos_meta")) || [];
 
   tabela.innerHTML = ""; // Limpar a tabela antes de gerar novamente
 
-  Novos_Gastos.forEach(gasto => {
+  Novos_meta.forEach(gasto => {
     let tr = document.createElement("tr");
-    tr.id = `Novos_gastos-${gasto.id}`;
+    tr.id = `Novos_meta-${gasto.id}`;
 
     Object.values(gasto).forEach(valor => {
       const td = document.createElement("td");
@@ -82,7 +81,7 @@ function gerarTabela() {
       tr.appendChild(td);
     });
 
-    let tdAcao = criarBotoes();
+    let tdAcao = criarBotoes(gasto.id);
     tr.appendChild(tdAcao);
 
     tabela.appendChild(tr);
@@ -90,21 +89,14 @@ function gerarTabela() {
 }
 
 // Função para criar botões de ação (editar e excluir)
-function criarBotoes() {
+function criarBotoes(id) {
   const td = document.createElement("td");
 
   const editarBotao = gerarBotao("Editar");
   const excluirBotao = gerarBotao("Excluir");
 
-  editarBotao.addEventListener("click", (event) => {
-    const linha = event.target.parentElement.parentElement;
-    editar(linha);
-  });
-
-  excluirBotao.addEventListener("click", (event) => {
-    const linha = event.target.parentElement.parentElement;
-    excluir(linha);
-  });
+  editarBotao.addEventListener("click", () => editar(id));
+  excluirBotao.addEventListener("click", () => excluir(id));
 
   td.appendChild(editarBotao);
   td.appendChild(excluirBotao);
@@ -120,15 +112,12 @@ function gerarBotao(texto) {
 }
 
 // Função para editar um gasto
-function editar(linha) {
-  const idOpto = parseInt(linha.id.split("-")[1]);
-
-  let Novos_Gastos = JSON.parse(localStorage.getItem("Novos_gastos")) || [];
-  let indiceGastoEditado = buscarGasto(idOpto, Novos_Gastos);
+function editar(id) {
+  let indiceGastoEditado = Novos_meta.findIndex(gasto => gasto.id === id);
 
   if (indiceGastoEditado !== -1) {
     // Preencher o formulário com os dados do gasto a ser editado
-    const gasto = Novos_Gastos[indiceGastoEditado];
+    const gasto = Novos_meta[indiceGastoEditado];
     nomeInput.value = gasto.nome;
     InputValor.value = gasto.valor;
     InputData.value = gasto.inicio;
@@ -144,8 +133,8 @@ function editar(linha) {
 
 // Função para salvar a edição de um gasto
 function salvarEdicao(indice) {
-  Novos_Gastos[indice] = {
-    id: Novos_Gastos[indice].id,
+  Novos_meta[indice] = {
+    id: Novos_meta[indice].id,
     nome: nomeInput.value.trim(),
     valor: InputValor.value.trim(),
     inicio: InputData.value.trim(),
@@ -153,7 +142,7 @@ function salvarEdicao(indice) {
     categoria: categoria.value.trim(),
   };
 
-  localStorage.setItem("Novos_gastos", JSON.stringify(Novos_Gastos));
+  localStorage.setItem("Novos_meta", JSON.stringify(Novos_meta));
 
   form.reset();
   gerarTabela();
@@ -165,27 +154,14 @@ function salvarEdicao(indice) {
 }
 
 // Função para excluir um gasto
-function excluir(linha) {
-  const idOpto = parseInt(linha.id.split("-")[1]);
-
-  let Novos_Gastos = JSON.parse(localStorage.getItem("Novos_gastos")) || [];
-  let indiceGastoExcluido = buscarGasto(idOpto, Novos_Gastos);
+function excluir(id) {
   let confirmar = confirm("Deseja excluir o gasto?");
 
   if (confirmar) {
-    Novos_Gastos.splice(indiceGastoExcluido, 1);
-    localStorage.setItem("Novos_gastos", JSON.stringify(Novos_Gastos));
-    linha.remove();
+    Novos_meta = Novos_meta.filter(gasto => gasto.id !== id);
+    localStorage.setItem("Novos_meta", JSON.stringify(Novos_meta));
+    gerarTabela();
   }
-}
-
-// Função para buscar um gasto pelo ID
-function buscarGasto(id, novoGasto) {
-  for (let i = 0; i < novoGasto.length; i++) {
-    if (novoGasto[i].id == id)
-      return i;
-  }
-  return -1;
 }
 
 // Carregar dados da tabela ao carregar a página
@@ -198,6 +174,5 @@ flatpickr("#calendario", {
   dateFormat: "d/m/Y", // Formato da data exibida
 });
 flatpickr("#calendariofim", {
-    dateFormat: "d/m/Y", // Formato da data exibida
-  });
-  
+  dateFormat: "d/m/Y", // Formato da data exibida
+});
