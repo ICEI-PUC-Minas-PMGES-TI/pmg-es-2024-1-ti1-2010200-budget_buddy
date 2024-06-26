@@ -50,8 +50,9 @@ function criarGraficoMes(gastosPorMes) {
             datasets: [{
                 label: 'Gastos Totais',
                 data: valores,
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: 'rgba(240, 128, 128, 1)',
+                borderColor: 'rgba(192, 75, 75, 1)', // Vermelho mais escuro
+
                 borderWidth: 1
             }]
         },
