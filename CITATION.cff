@@ -1,65 +1,32 @@
-<<<<<<< HEAD
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: Budget Buddy
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Campos
+    given-names: Débora
+  - family-names: Santana
+    given-names: Iago
+  - family-names: Clara
+    given-names: Maria
+  - family-names: Felipe
+    given-names: Matheus
+  - family-names: Melo
+    given-names: Rafael
+  - family-names: Boaventura
+    given-names: Tiago
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Aramuni
+    given-names: João Paulo
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Soares
+    given-names: Michelle Hanne
 keywords:
-  - 
-  - 
-repository-code: 
+  - budget
+  - finance
+  - management
+repository-code: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/tree/master
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2022-07-14
-=======
-cff-version: 1.0.1
-message: Please cite this software using these metadata.
-title: 
-authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
-keywords:
-  - 
-  - 
-repository-code: 
-license: CC-BY-4.0
-version: 1.0.0
-date-released: 2022-07-14
->>>>>>> 576e4073eb686b7caee5801aac8f95491eb4d605
