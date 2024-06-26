@@ -159,30 +159,29 @@ Cadastrar nova Meta
 
 
 
-
-
-
-
-
 ## Gestão de Projetos
 
 **Frontend**
 
-HTML: Estrutura o conteúdo da página.
-CSS: Estiliza o conteúdo para torná-lo visualmente atraente.
-JavaScript: Manipula o DOM (Document Object Model) para criar uma experiência interativa, lida com eventos de usuário, e pode fazer chamadas assíncronas para o backend (AJAX ou fetch).
+- **HTML**: Estrutura o conteúdo da página.
+- **CSS**: Estiliza o conteúdo para torná-lo visualmente atraente.
+- **JavaScript**: Manipula o DOM (Document Object Model) para criar uma experiência interativa, lida com eventos de usuário e pode fazer chamadas assíncronas para o backend (AJAX ou fetch).
 
 **Backend**
 
-Node.js: Serve a aplicação, manipula rotas, realiza operações com banco de dados, autenticação e autorização, entre outras funcionalidades de backend.
-Frameworks/Libs: Frameworks como Express.js são comumente usados com Node.js para facilitar o desenvolvimento de servidores web e APIs RESTful.
+- **Node.js**: Serve a aplicação, manipula rotas, realiza operações com banco de dados, autenticação e autorização, entre outras funcionalidades de backend.
+- **Frameworks/Libs**: Frameworks como Express.js são comumente usados com Node.js para facilitar o desenvolvimento de servidores web e APIs RESTful.
 
+**Ferramentas de Comunicação e Design**
 
-Dentre outras ferramentas empregadas, utilizamos um grupo no WhatsApp para facilitar a comunicação e o envio de arquivos. Além disso, empregamos as seguintes ferramentas:
+Para facilitar a comunicação e o envio de arquivos, utilizamos um grupo no WhatsApp. Além disso, empregamos as seguintes ferramentas:
 
-- Illustrator: Utilizado para a criação da logo do projeto.
-- Canva: Utilizado para a parte final do design dos slides.
-- Excel: Utilizado para gerenciar as tarefas.
-- Figma: Utilizado para criar os protótipos e o User Flow.
+- **Illustrator**: Utilizado para a criação da logo do projeto.
+- **Canva**: Utilizado para a parte final do design dos slides.
+- **Excel**: Utilizado para gerenciar as tarefas.
+- **Figma**: Utilizado para criar os protótipos e o User Flow.
 
+**Comunicação e Colaboração**
+
+Utilizamos o aplicativo Discord para alinhamento do projeto, divisão de tarefas e acompanhamento do andamento dos incrementos da sprint por meio de um servidor/grupo. Pelo menos uma vez na semana, os integrantes se reuniam para analisar os códigos de seus companheiros e acrescentar novas ideias.
 
