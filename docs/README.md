@@ -115,25 +115,46 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 
 ## Wireframes
 
-![Home](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/ff756660-dbd7-4a4c-b847-d7a47a61c55d)
+Home
 
-![Cadastro](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/90cf6186-1559-4b58-b95d-2ec196a26e95)
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/c5986aad-d922-44aa-b2be-fc416d2b53a9)
 
-![login](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/b675dfbc-2f71-4a2e-b179-5a62e926b417)
+Login
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/9be9428f-5153-4e24-a0c1-a4b3c4c7e204)
 
-![Esqueci a senha](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/f8098bfd-bb48-4964-8ec2-1702e2f90a30)
+Cadastro
 
-![Painel do usuário](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/89a7d219-9c05-49c2-bd23-8c850a1802d1)
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/fed07f84-cb38-4889-8206-d5a875ddbceb)
 
-![Painel principal](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/0fa0da6b-a550-46b2-b892-00934d79c880)
 
-![Declaração de gastos](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/34ad7ef0-43ea-4b41-8ac2-aa226b0a8a73)
+Esqueci a senha
 
-![Cadastrar novo gasto](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/23bdedf3-f4bf-4e8b-9c59-09414089ff67)
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/b689067e-87a2-411f-bace-990920cf5c75)
 
-![Cadastrar nova receita](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/9b404519-02d0-47f3-8d39-0f4d3e1cafcc)
 
-![Cadastrar nova meta](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/29c2e8fe-ed3e-466e-b41f-156132fd7ef7)
+Editar perfil
+
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/6cea19d9-6c11-4ada-8615-bff2a7af2acc)
+
+
+Dashboard
+
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/1d84d6e5-4744-4bba-9c2e-f3e4f3fe297e)
+
+
+
+Cadastrar novo gasto
+
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/0a6729c4-4ff9-444c-bd1e-0f8c2299fc65)
+
+Cadastrar nova receita
+
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/934f8e72-4e65-4e59-bfec-db82aa54f7fb)
+
+Cadastrar nova Meta
+
+![image](https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2024-1-ti1-2010200-budget_buddy/assets/160637977/e1257be6-77b5-4f54-a7b1-4ec572325552)
+
 
 
 
@@ -145,29 +166,23 @@ Quando questionada sobre como poderia melhorar sua habilidade de gerenciar dinhe
 
 ## Gestão de Projetos
 
-**Relatório de Divisão de Tarefas e Ferramentas Utilizadas**
+**Frontend**
 
-Durante o desenvolvimento do projeto, a equipe adotou uma abordagem colaborativa na distribuição de responsabilidades, visando garantir eficiência e cumprimento de todas as etapas necessárias. As tarefas foram divididas entre os membros da equipe da seguinte maneira:
+HTML: Estrutura o conteúdo da página.
+CSS: Estiliza o conteúdo para torná-lo visualmente atraente.
+JavaScript: Manipula o DOM (Document Object Model) para criar uma experiência interativa, lida com eventos de usuário, e pode fazer chamadas assíncronas para o backend (AJAX ou fetch).
 
-- Matheus Felipe Correa: Encarregou-se da divisão de tarefas, documentação no GitHub e no Canvas, criação da logo e elaboração dos slides de apresentação e design thinking.
+**Backend**
 
-- Maria Clara: Contribuiu com a criação da logo, mapeamento do público-alvo e stakeholders, além de desenvolver o user flow e os wireframes.
+Node.js: Serve a aplicação, manipula rotas, realiza operações com banco de dados, autenticação e autorização, entre outras funcionalidades de backend.
+Frameworks/Libs: Frameworks como Express.js são comumente usados com Node.js para facilitar o desenvolvimento de servidores web e APIs RESTful.
 
-- Iago Santana: Responsável pela criação das personas utilizadas na fase de design thinking, elaboração do mapa de prioridades e do mural de possibilidades.
 
-- Débora Campos: Encarregada da realização das entrevistas e prestou apoio ao grupo na elaboração da logo.
-
-- Rafael Melo: Contribuiu com apoio ao grupo durante o trabalho todo.
-  
-- Tiago Boaventura: Responsável pela elaboração da matriz de alinhamento e colaborou com Iago Santana na criação do mapa de prioridades.
-
-Essa divisão permitiu uma abordagem multidisciplinar e colaborativa, resultando em um projeto bem estruturado e alinhado com os objetivos estabelecidos.
-
-Dentre as ferramentas empregadas, utilizamos um grupo no WhatsApp para facilitar a comunicação e o envio de arquivos. Além disso, empregamos as seguintes ferramentas:
+Dentre outras ferramentas empregadas, utilizamos um grupo no WhatsApp para facilitar a comunicação e o envio de arquivos. Além disso, empregamos as seguintes ferramentas:
 
 - Illustrator: Utilizado para a criação da logo do projeto.
 - Canva: Utilizado para a parte final do design dos slides.
 - Excel: Utilizado para gerenciar as tarefas.
 - Figma: Utilizado para criar os protótipos e o User Flow.
 
-A gestão da configuração do projeto e o upload de arquivos foram atribuídos a uma única pessoa, Matheus Felipe Correa, que ficou responsável pelo envio dos documentos e auxiliou os demais membros nas tarefas necessárias.
+
