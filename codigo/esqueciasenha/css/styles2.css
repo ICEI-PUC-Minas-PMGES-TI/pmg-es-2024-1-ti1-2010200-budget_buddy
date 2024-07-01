@@ -1,4 +1,4 @@
-body {  /* todo o conteúdo da página */
+body {
   background-color: white;
   background-image: url('../assets/img/background.jpg');
   background-size: cover;
@@ -6,50 +6,54 @@ body {  /* todo o conteúdo da página */
   background-repeat: no-repeat;
 }
 
-
 h1, h2 {
   text-align: center;
+  color: #202020;
 }
 
-h1 { /* Mensagem de enviação de email*/
-  text-align: left;
-  margin-left: 20px ;
+h1 {
   margin-bottom: 10px;
-  margin-top: 20px;
-  font-size: 2rem; 
+  font-size: 2rem;
 }
 
-h2 { /* cheque a caixa de spam */
-  margin-left: 351px;
-  margin-bottom: 5px;
-  margin-top: 15px;
-  font-size: 0.8rem; 
-  max-width: 400px;
+h2 {
+  margin-bottom: 15px;
+  font-size: 1rem;
 }
 
-.forgot-password-container a { /* link para redirecionamento de cadastro */
+input[type=email]::placeholder,
+input[type=password]::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+input[type=email],
+input[type=password] {
+  background-color: #006400;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.forgot-password-container a {
   color: #006400;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .forgot-password-container {
-  text-align: left;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 50px;
+  text-align: center;
   margin-top: 5px;
 }
 
-p { /* mensagem que aparece para redirecionamento de cadastro */
-  margin-top: 100px;
-  margin-left: 440px;
+p {
+  margin-top: 20px;
   font-size: 0.9rem;
 }
 
-#budgetLogo { /* imagem da minha logo */
-  max-width: 170px; 
-  margin-bottom: 0px;
-  display: block;
-  margin-left: 150px;
+#budgetLogo {
+  max-width: 170px;
   margin-top: 100px;
 }
