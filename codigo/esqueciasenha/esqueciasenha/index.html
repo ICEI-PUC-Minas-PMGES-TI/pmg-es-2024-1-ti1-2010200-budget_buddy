@@ -1,69 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <meta charset="UTF-8">
   <title>Esqueci minha senha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <script>
-    emailjs.init("Hhki7cdXZOh4h3mQX");
-
-    document.getElementById('resetForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const emailInput = document.getElementById('emailInput');
-      const email = emailInput.value;
-
-      const templateParams = {
-        to: email,
-        from_name: 'Budget Buddy',
-        reply_to: 'budgetbuddypuc@gmail.com',
-        subject: 'Password Reset Request',
-        html: `
-          <p>Hello,</p>
-          <p>We have received a password reset request for your Budget Buddy account. If you did not request a password reset, please ignore this email.</p>
-          <p>To reset your password, please click the following link:</p>
-          <a href="http://127.0.0.1:5500/reset-password?token=Hhki7cdXZOh4h3mQX&email=${email}">Reset Password</a>
-          <p>If the link above does not work, please copy and paste the URL into your web browser.</p>
-          <p>Best regards,</p>
-          <p>The Budget Buddy Team</p>
-        `
-      };
-
-      emailjs.send('service_n39vzid', 'template_nn6qzuc', templateParams)
-        .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-          alert('Um e-mail de redefinição de senha foi enviado para o seu endereço de e-mail.');
-          emailInput.value = '';
-          window.location.href = 'confirmacao.html';
-        }, function(error) {
-          console.log('FAILED...', error);
-          alert('Ocorreu um erro ao enviar o e-mail de redefinição de senha. Por favor, tente novamente.');
-        });
-    });
-
-    const textInput = document.getElementById('textInput');
-
-    textInput.addEventListener('keydown', function(event) {
-      if (event.key === 'Enter') {
-        event.preventDefault();
-        window.location.href = 'confirmacao.html';
-      }
-    });
-  </script>
 </head>
 <body>
-  <div class="forgot-password-container">
-    <img src="assets/img/BudgetBuddy2.png" alt="logo" id="budgetLogo" />
+  <div class="container forgot-password-container text-center">
+    <img src="assets/img/BudgetBuddy2.png" alt="logo" id="budgetLogo" class="img-fluid mx-auto d-block" />
     <h1>Esqueceu a sua senha?</h1>
-    <h2>Te enviaremos um e-mail para que você realize a mudança de senha</h2>
-    <form id="resetForm" >
-      <input type="email" id="emailInput" placeholder="Digite seu e-mail" required />
-      <input type="submit" style="display: none;" />
+    <h2>Insira seu email para que possa redefinir a senha!</h2>
+    <form id="resetForm" class="w-100">
+      <input type="email" id="emailInput" class="form-control mx-auto" placeholder="Digite seu email cadastrado" required />
+      <button type="submit" class="btn btn-success mt-3">Enviar</button>
     </form>
     <p>Não possui cadastro? <a href="/codigo/cadastroUsuario/cadastro.html">Crie um agora!</a></p>
   </div>
+
+  <script>
+    // Função para obter dados do localStorage
+    function getUserByEmail(email) {
+      let users = JSON.parse(localStorage.getItem('users')) || [];
+      return users.find(user => user.email === email);
+    }
+
+    document.getElementById('resetForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      var email = document.getElementById('emailInput').value;
+      var user = getUserByEmail(email);
+      
+      if (user) {
+        localStorage.setItem('resetEmail', email); // Salva o email no localStorage para uso posterior
+        alert('Email encontrado! Redirecionando para redefinição de senha.');
+        window.location.href = 'confirmacao.html'; // Caminho para a página de redefinição de senha
+      } else {
+        alert('Email não encontrado. Tente novamente.');
+      }
+    });
+  </script>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
